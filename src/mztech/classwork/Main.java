@@ -15,12 +15,14 @@ public class Main{
      */
     //camelCase
     //PascalCase
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Hello World!");
-        System.out.println(10 -1);
+        System.out.println(10 - 1);
         System.out.println(4 * 6);
         System.out.print("Hello");
         System.out.print("World");
+
+       // calculator((a:5, b:8));
 
         //System: It is a final class defined in the java.lang package.
         //out: This is an instance of PrintStream type, which is a public and static member field of the System class.
@@ -30,6 +32,13 @@ public class Main{
         It prints any argument passed to it and adds a new line to the output.
 
          */
-
+       /* public static void calculator ( int a,int b){
+            System.out.print(a + b);
+            System.out.print(a - b);
+            System.out.print(a * b);
+            System.out.print(a \ b);
+            }
+        */
+        }
     }
-}
+
