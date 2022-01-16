@@ -6,7 +6,7 @@ public class BasicDataTypes {
     byte x = 2; // 8 bits
     short y = 4; // 16 bits
     long z = 89; // 64 bits
-    int  u = 15; // integer, 32 bits
+    int u = 15; // integer, 32 bits
     float v = 1.50f; // can hold  decimal, single precision, 32 bits
     double w = 56.40d;// can hold decimal, double precision, 64 bit
     char s = 'h';// single letter
@@ -89,3 +89,4 @@ public class Employee {
  */
 
 // final , finally, finalize
+//Enable auto format on save
