@@ -7,11 +7,18 @@ public class RandomNumber {
         int max = 6;
 
         //generate random int value from 1 to 6
-        System.out.println("Random value from " +min+ " to " + max + ":");
-        int randomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
+        System.out.println("Random value from " + min + " to " + max + ":");
+        int randomInt = (int) Math.floor(Math.random() * (max - min + 1) + min);
         System.out.println(randomInt);
 
+        /* System.out.println(Math.min(5,10));
+        System.out.println("Any random number " + Math.random() * 10); // 0 - 10 // 9
+        System.out.println("Any random number " + Math.random() * 5); // 0-5 // 4
 
+        Two Formulas:
+        1. random() * (min - max) + min
+        2. min + (Math.random() * (10 - 5 + 1)
+         */
 
 
         //Math.random()*(max-min) -> does the job
@@ -32,6 +39,12 @@ public class RandomNumber {
         //By adding myMin to that, you get a floating point in the range [myMin, myMax + 1)
         //
         //Finally, by applying Math.floor(), the possible values are restricted to integers in the range [myMin, myMax + 1), which for integers is equivalent to {myMin...myMax}.
+
+        /*
+        Random rand = new Random();
+        int random_integer = rand.nextInt(upperbound-lowerbound) + lowerbound;
+        System.out.println(random_integer);
+         */
     }
 }
 
