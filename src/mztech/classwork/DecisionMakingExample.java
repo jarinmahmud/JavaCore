@@ -1,6 +1,6 @@
 package mztech.classwork;
 
-public class decisionMakingExample {
+public class DecisionMakingExample {
     //we use conditional loop for decision making
     //there is if, if....else, nested loop, switch statement
 

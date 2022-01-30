@@ -2,7 +2,7 @@ package mztech.classwork;
 
 import java.util.Scanner;
 
-public class randomNumberInput {
+public class RandomNumberInput {
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
