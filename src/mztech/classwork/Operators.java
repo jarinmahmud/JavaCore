@@ -52,7 +52,7 @@ public class Operators {
 
         //following will return true since name is type of string
         boolean result = name instanceof String;
-        System.out.println("Is name a string?" + result);
+        System.out.println("Is name a string? " + result);
 
     }
 

@@ -89,4 +89,7 @@ public class Employee {
  */
 
 // final , finally, finalize
+// final - keyword means you cannot override the assignment, an access modifier
+//finally - finally is the block in exception handling
+//finalize - finalize is the method of object class
 //Enable auto format on save
