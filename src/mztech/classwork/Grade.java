@@ -10,54 +10,62 @@ F -> 0 - 64
 Also do this using case statement !!!important
 Output should be, You got A - C or You failed
      */
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-    Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-    System.out.println("Enter obtained marks : ");
-    int marks = sc.nextInt();
+        System.out.println("Enter obtained marks (0-100): ");
+        int marks = sc.nextInt();
+        findGrade(marks);
 
-         switch(marks) {
-             int x = marks;
-        case 1 :
-            if (0<=x<=64){
-                System.out.println("Grade: F");
-            }
-            break;
-        case 2 :
-            if (65<=marks<=79){
-                System.out.println("Grade: C");
-            }
-            break;
-
-        case 3 :
-            if (80<=marks<=89){
-                System.out.println("Grade: B");
-            }
-            break;
-        case 4 :
-            if (90<=marks<=100){
-                System.out.println("Grade: A");
-            }
-            break;
-
-        case 5 :
-            if (0>marks>100){
-                System.out.println("Please enter a valid grade.");
-            }
-            break;
-
-        default :
-            System.out.println("Invalid grade.");
     }
-      System.out.println("Your grade is " + marks);
+
+    public static boolean validateGrade(int marks) {
+        if (marks < 0 || marks > 100) {
+            return false;
+        } else return true;
+
+    }
+
+    public static void gradeA(int marks) {
+        if (validateGrade(marks) && marks >= 90 && marks < 100) {
+            System.out.println("Grade: A");
+        }
+    }
+
+    public static void gradeB(int marks) {
+        if (validateGrade(marks) && marks >= 80 && marks < 89) {
+            System.out.println("Grade: B");
+        }
+    }
+
+    public static void gradeC(int marks) {
+        if (validateGrade(marks) && marks >= 65 && marks < 79) {
+            System.out.println("Grade: C");
+        }
+    }
+
+    public static void gradeF(int marks) {
+        if (validateGrade(marks) && marks < 65) {
+            System.out.println("Grade: F");
+        }
+
+    }
+
+    public static void findGrade(int marks) {
+        gradeA(marks);
+        gradeB(marks);
+        gradeC(marks);
+        gradeF(marks);
+
+        if (!validateGrade(marks)) {
+            System.out.println("Please enter a valid grade.");
+        }
+    }
+
 }
 
-
-    }
-
-
-    /* with if-else statement:
+     /* with if-else statement:
 
     public static void main(String[] args) {
 
@@ -85,43 +93,43 @@ Output should be, You got A - C or You failed
     /*
     // With switch-break statement:
 
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter obtained marks : ");
-    int marks = sc.nextInt();
+    public static String findGrade(int marks) {
+        if (marks < 0 || marks > 100)
+            return "Invalid score";
 
-         switch(marks) {
-         case 1 :
-         if (0<=marks<=64){
-         System.out.println("Grade: F");
-         }
-           break;
-         case 2 :
-         if (65<=marks<=79){
-         System.out.println("Grade: C");
-         }
-           break;
+        switch (marks / 10) {
+            case 10:
+            case 9:
 
-         case 3 :
-         if (80<=marks<=89){
-         System.out.println("Grade: B");
-         }
-           break;
-         case 4 :
-         if (90<=marks<=100){
-         System.out.println("Grade: A");
-         }
-           break;
+                return "A";
 
-         case 5 :
-         if (0>marks>100){
-         System.out.println("Please enter a valid grade.");
-         }
-         break;
 
-         default :
-            System.out.println("Invalid grade.");
-      }
-      System.out.println("Your grade is " + marks);
-   }
+            case 8:
+
+                return "B";
+
+
+            case 7:
+            case 6:
+
+                return "C";
+
+
+            case 5:
+            case 4:
+            case 3:
+            case 2:
+            case 1:
+            case 0:
+
+                return "F";
+
+
+            default:
+                return "Invalid Grade.";
+
+        }
+
+    }
      */
 
