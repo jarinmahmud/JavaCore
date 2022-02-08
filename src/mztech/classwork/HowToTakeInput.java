@@ -1,10 +1,9 @@
 package mztech.classwork;
 
 import java.util.Scanner;
-public class HowToTakeInput
-{
-    public static void main(String[] args)
-    {
+
+public class HowToTakeInput {
+    public static void main(String[] args) {
         // Declare the object and initialize with
         // predefined standard input object
         Scanner sc = new Scanner(System.in);
@@ -29,10 +28,10 @@ public class HowToTakeInput
         double cgpa = sc.nextDouble();
 
         // Print the values to check if input was correctly obtained.
-        System.out.println("Name: "+name);
-        System.out.println("Gender: "+gender);
-        System.out.println("Age: "+age);
-        System.out.println("Mobile Number: "+mobileNo);
-        System.out.println("CGPA: "+cgpa);
+        System.out.println("Name: " + name);
+        System.out.println("Gender: " + gender);
+        System.out.println("Age: " + age);
+        System.out.println("Mobile Number: " + mobileNo);
+        System.out.println("CGPA: " + cgpa);
     }
 }
