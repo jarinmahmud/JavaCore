@@ -17,7 +17,9 @@ public class InfoInput {
         System.out.println("Name:" + name);
         System.out.println("Email:" + email);
         System.out.println("Phone:" + phone);
-        System.out.print("Address:" + street + "," + city + "," + state + "," + zip + "." + "\n");
+        System.out.println("Address:");
+        System.out.println(street + ",");
+        System.out.println(city + "," + state + " " + zip + "." + "\n");
     }
 
 }
