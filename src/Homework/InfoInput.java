@@ -1,19 +1,15 @@
 package Homework;
 
 public class InfoInput {
-    String name;
-    String email;
-    String phone;
-    String streetAddress;
-    String city;
-    String state;
+    String name, email, street, city, state;
+    long phone;
     int zip;
 
-    public InfoInput(String inputName, String inputEmail, String inputPhone, String inputAddress, String inputCity, String inputState, int inputZip) {
+    public InfoInput(String inputName, String inputEmail, long inputPhone, String inputStreet, String inputCity, String inputState, int inputZip) {
         name = inputName;
         email = inputEmail;
         phone = inputPhone;
-        streetAddress = inputAddress;
+        street = inputStreet;
         city = inputCity;
         state = inputState;
         zip = inputZip;
@@ -21,13 +17,7 @@ public class InfoInput {
         System.out.println("Name:" + name);
         System.out.println("Email:" + email);
         System.out.println("Phone:" + phone);
-        System.out.println("Address:" + streetAddress + ",");
-        System.out.print(city + ",");
-        System.out.print(state + ",");
-        System.out.println(zip + ".");
-        System.out.println("\n");
-
-
+        System.out.print("Address:" + street + "," + city + "," + state + "," + zip + "." + "\n");
     }
 
 }
