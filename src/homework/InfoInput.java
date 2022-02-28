@@ -1,4 +1,4 @@
-package Homework;
+package homework;
 
 public class InfoInput {
     String name, email, street, city, state;
