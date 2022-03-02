@@ -8,4 +8,27 @@ public class GitCommands {
     //git push
     //git clone linkToClone
 
+
+    /*
+    For creating branch:
+
+    git branch
+
+    git branch name
+
+    git checkout name // to redirect to branch
+     */
+
+    /*
+    Fetching from github to local:
+
+    git fetch // fetching to lacal repository
+
+    git merge // merging with original file
+
+    git pull // fetching + merging at the same time
+
+
+     */
+
 }
