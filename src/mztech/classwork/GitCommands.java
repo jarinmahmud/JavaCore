@@ -22,7 +22,7 @@ public class GitCommands {
     /*
     Fetching from github to local:
 
-    git fetch // fetching to lacal repository
+    git fetch // fetching to local repository
 
     git merge // merging with original file
 
