@@ -12,7 +12,7 @@ public class GradeCalculator {
         System.out.print("Grade: ");
 
         //conditions for printing grade
-        if (marks >= 94) {
+        if (marks >= 94 && marks < 101) {
             System.out.println("A++");
         } else if (marks >= 81 && marks < 93) {
             System.out.println("A");
@@ -20,8 +20,10 @@ public class GradeCalculator {
             System.out.println("B");
         } else if (marks >= 60 && marks < 70) {
             System.out.println("C");
-        } else {
+        } else if (marks >= 0 && marks <= 59) {
             System.out.println("F");
+        } else {
+            System.out.println("Invalid Grade.");
         }
     }
 }
