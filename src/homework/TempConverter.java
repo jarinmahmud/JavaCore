@@ -4,36 +4,38 @@ import java.util.Scanner;
 
 public class TempConverter {
     public static void main(String[] args) {
-        // Option to choose F/C to convert
         // Input temperature
-        // convert temperature
+        // Option to choose F/C to convert
+        // Convert temperature
 
-        Scanner optInput = new Scanner(System.in);
-        System.out.println("Choose Option from the list: ");
-        System.out.println("1. Convert F to C ");
-        System.out.println("2. Convert C to F");
-        System.out.println("Input choice: ");
-        int choice = optInput.nextInt();
 
-        Scanner tempInput = new Scanner(System.in);
         System.out.println("Input temperature to convert: ");
-        int temp = tempInput.nextInt();
+        double temp = input().nextDouble();
 
-        int result;
+        System.out.println("What is the unit of temperature (F/C)?");
+        char choice = input().next().charAt(0);
 
-        if (choice == 1 || choice == 2) {
-
-            if (choice == 1) {
-                result = ((temp - 32) * 5) / 9;
-                System.out.println("Result : " + result + "C");
-            }
-            if (choice == 2) {
-                result = (temp * (9 / 5)) + 32;
-                System.out.println("Result : " + result + "F");
-            }
+        //convert
+        double result;
+        // toLowerCase() handling the Uppercase/Lowercase thing.
+        if (toUpperCase(choice) == 'F') {
+            result = ((temp - 32) * 5) / 9;
+            System.out.println("Result : " + result + "F");
+        } else if (toUpperCase(choice) == 'C') {
+            result = (temp * (9 / 5)) + 32;
+            System.out.println("Result : " + result + "C");
         } else {
-            System.out.println("Invalid Choice.");
+            System.out.println("Invalid unit.");
         }
 
     }
+
+    public static char toUpperCase(char choice) {
+        return Character.toUpperCase(choice);
+    }
+
+    public static Scanner input() {
+        return new Scanner(System.in);
+    }
 }
+
