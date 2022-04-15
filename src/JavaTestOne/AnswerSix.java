@@ -19,10 +19,9 @@ public class AnswerSix {
         Scanner sc = new Scanner(System.in);
         String ans = sc.next();
 
-        if (ans == "ON") {
+        if (ans.equalsIgnoreCase("ON")) {
             System.out.println("You are all set to go. Drive carefully.");
-        }
-        if (ans == "OFF") {
+        } else if (ans.equalsIgnoreCase("OFF")) {
             System.out.println("Please start the car before proceeding.");
         } else {
             System.out.println("Invalid answer.");

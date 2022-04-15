@@ -25,7 +25,7 @@ public class AnswerOne {
 
         Scanner sc2 = new Scanner(System.in);
         System.out.println("Second Number:");
-        int y = sc.nextInt();
+        int y = sc2.nextInt();
 
         int avg = (x + y) / 2;
 

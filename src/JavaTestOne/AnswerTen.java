@@ -20,6 +20,12 @@ public class AnswerTen {
             case 'i':
             case 'o':
             case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+
                 System.out.println("it's a vowel.");
                 break;
 

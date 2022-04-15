@@ -13,7 +13,7 @@ public class AnswerThree {
      */
     public static void main(String[] args) {
         String str = "I Love Java";
-        String[] x = str.split(" ");// Question
+        String[] x = str.split(" ");
         System.out.println(" There are " + x.length + " words in given input.");
 
     }
